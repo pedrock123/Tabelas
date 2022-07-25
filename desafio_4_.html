@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terceiro Desafio</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+
+        }
+
+        thead {
+            background-color: rgb(51, 50, 50);
+            color: white;
+            font-weight: bold;
+        }
+
+        td,
+        th {
+            border: 1px black solid;
+            padding: 10px;
+            text-align: center;
+            width: 400px;
+        }
+
+        th {
+            background-color: rgb(51, 50, 50);
+            color: white;
+            font-weight: bold;
+        }
+
+        .mulher {
+            background-color: pink;
+        }
+
+        .homem {
+            background-color: cadetblue;
+        }
+
+        table #m01,
+        table #h01 {
+            background-color: rgb(97, 70, 97);
+            color: white;
+            font-weight: bold;
+        }
+
+        table #h01 {
+            background-color: rgb(74, 77, 97);
+            color: white;
+            font-weight: bold;
+        }
+
+        caption {
+            background-color: gray;
+            text-align: center;
+            padding: 6px;
+            border-radius: 10px 10px 0px 0px;
+            font-weight: bold;
+            font-size: 2em;
+        }
+        .cfilmes{
+            background-color: burlywood;
+        }
+
+        #conteiner{
+            overflow-x: auto;
+            width: 70vh;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Desafio 3</h1>
+    <div id="conteiner">
+        <table>
+            <caption>Pessoas</caption>
+            <thead>
+                <tr>
+                    <th scope="col">Grupo</th>
+                    <th scope="col">Nomes</th>
+                    <th scope="col" colspan="3">filmes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th id="m01" scope="rowgroup" rowspan="4">Mulheres</th>
+                </tr>
+                <tr class="mulher">
+                    <td>Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vindadores</td>
+                </tr>
+                <tr class="mulher">
+                    <td>Beatriz Souza</td>
+                    <td>Hulk</td>
+                    <td>inception</td>
+                    <td>batman</td>
+                </tr>
+                <tr class="mulher">
+                    <td>Claudia Melo</td>
+                    <td>Oblivion</td>
+                    <td>Matrix</td>
+                    <td>Big Hero</td>
+                </tr>
+                <tr>
+                </tr>
+                <tr>
+                    <th id="h01" scope="rowgroup" rowspan="4">Homens</th>
+                </tr>
+                <tr class="homem">
+                    <td>Bruno Mendonça</td>
+                    <td>Intocaveis</td>
+                    <td>Amnesia</td>
+                    <td>Gladiador</td>
+                </tr>
+                <tr class="homem">
+                    <td>Daniel Lourenço</td>
+                    <td>Wall-E</td>
+                    <td>Oldboy</td>
+                    <td>Dangal</td>
+                </tr>
+                <tr class="homem">
+                    <td>Fabiano Mota</td>
+                    <td>Star Wars V</td>
+                    <td>Taxi Driver</td>
+                    <td>Toy Story</td>
+                </tr>
+            <tfoot>
+                <tr>
+                    <th scope="col" colspan="4">Total</th>
+                    <td>1000</td>
+                </tr>
+            </tfoot>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+
+</html>
