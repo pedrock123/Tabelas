@@ -15,7 +15,7 @@
             width: 500px;
         }
 
-        caption{
+        caption {
             font-size: 1.5em;
             font-weight: bolder;
             background-color: darkgray;
@@ -30,16 +30,23 @@
 
         }
 
-        thead th, tfoot th, tfoot td{
-            color: white;background-color: rgb(51, 51, 51);
+        thead th,
+        tfoot th,
+        tfoot td {
+            color: white;
+            background-color: rgb(51, 51, 51);
         }
 
-        tbody td {
-            background-color: rgb(190, 224, 226);
+        tbody tr {
+            background-color: rgb(189, 207, 207);
         }
 
-        td.num{
+        td.num {
             text-align: right;
+        }
+
+        tbody > tr:nth-child(2n-1){
+            background-color: rgb(123, 177, 179);
         }
     </style>
 </head>
@@ -62,8 +69,8 @@
         <thead>
             <!-- Cabeça -->
             <tr>
-                <th>Unidade Federativa</th>
-                <th>População</th>
+                <th scope="col">Unidade Federativa</th>
+                <th scope="col" style="width: 50px;">População</th>
             </tr>
         </thead>
 
@@ -182,7 +189,7 @@
         <tfoot>
             <!-- pé -->
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td class="num"><strong>213.317.639</strong></td>
             </tr>
 
