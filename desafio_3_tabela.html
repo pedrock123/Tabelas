@@ -29,6 +29,12 @@
             width: 400px;
         }
 
+        th{
+            background-color: rgb(51, 50, 50);
+            color: white;
+            font-weight: bold;
+        }
+
         .mulher{
             background-color: pink;
         }
@@ -54,16 +60,16 @@
     <table>
         <thead>
             <tr>
-                <th>Grupo</th>
-                <th>Nomes</th>
-                <th colspan="3">filmes</th>
+                <th scope="col">Grupo</th>
+                <th scope="col">Nomes</th>
+                <th scope="colgroup" colspan="3">filmes</th>
 
             </tr>
 
         </thead>
         <tbody>
             <tr>
-                <th id="m01" rowspan="4">Mulheres</th>
+                <th id="m01" scope="rowgroup" rowspan="4">Mulheres</th>
             </tr>
             <tr class="mulher">
 
@@ -78,6 +84,8 @@
                 <td>inception</td>
                 <td>batman</td>
             </tr>
+
+        
             <tr class="mulher">v
                 <td>Claudia Melo</td>
                 <td>Oblivion</td>
@@ -88,7 +96,7 @@
 
             </tr>
             <tr >
-                <th id="h01" rowspan="4">Homens</th>
+                <th id="h01" scope="rowgroup" rowspan="4">Homens</th>
             </tr>
             <tr class="homem">
 
@@ -105,10 +113,16 @@
             </tr>
             <tr class="homem">
                 <td>Fabiano Mota</td>
-                <td>Star Wars</td>
+                <td>Star Wars V</td>
                 <td>Taxi Driver</td>
                 <td>Toy Story</td>
             </tr>
+            <tfoot>
+                <tr>
+                    <th scope="col" colspan="4">Total</th>
+                    <td>1000</td>
+                </tr>
+            </tfoot>
 
         </tbody>
     </table>
